@@ -1,0 +1,282 @@
+@import "colors";
+html {
+    font-size: 10px;
+   
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto","Verdana";
+}
+.wrapper {
+    width: 1440px;
+    margin: 0 auto;
+}
+.brand-logo {
+    color: $secondary-color;
+    font-weight: bold;
+    letter-spacing: 0.2rem;
+
+    i {
+        color: $primary-color;
+    }
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    box-shadow: 0px 1px 2px rgb(189, 187, 187);
+
+    .search-box {
+        width: 30%;
+        position: relative;
+        input {
+            height: 3rem;
+            width: 100%;
+            border: 1px solid rgba(128, 128, 128, 0.397);
+            padding: 0 2rem;
+        }
+        button {
+            position: absolute;
+            right: calc(-4rem);
+            top: 0.3rem;
+            height: 3rem;
+            font-size: 2rem;
+            border: 0;
+            background: none;
+            color: rgb(92, 89, 89);
+        }
+    }
+
+    .nav-items {
+        font-size: 1.6rem;
+        text-transform: uppercase;
+        a {
+            color: $secondary-color;
+            text-decoration: none;
+            position: relative;
+            i {
+                padding-left: 1rem;
+                /*position: absolute;
+                bottom: -1.6rem;
+                left:50%;*/
+            }
+        }
+        a:hover {
+            text-decoration: underline;
+            text-underline-offset: 1rem;
+        }
+        ul {
+            display: flex;
+            flex-direction: row;
+            gap: 0 2rem;
+            list-style: none;
+        }
+        .nav-item {
+            position: relative;
+            .dropdown {
+
+                display: none;
+
+                position: absolute;
+                right: 0;
+                padding: 2rem 2rem;
+                background-color: #fff;
+                box-shadow: 2px 2px 3px rgba(128, 128, 128, 0.308);
+                
+                input{
+                    padding: 1rem;
+                    margin: 1rem;
+                }
+                
+                input:focus{
+                    border-color: $secondary-color2;
+                }
+                button{
+                    border: 2px solid $secondary-color;
+                    background-color: $secondary-color3;
+                    width: 100%;
+                    padding: 1rem;
+                    text-transform: uppercase;
+                    font-weight: bold;
+                    margin: 1rem 0;
+                }
+                button:hover{
+                    cursor: pointer;
+                    border-color: $secondary-color2;
+                    color:$secondary-color2
+                }
+                .links{
+                    padding: 1rem 0;
+                    text-align: center;
+                }
+            }
+
+        }
+        .nav-item.active{
+            >a{
+                color:$secondary-color2;
+            }
+            
+            .dropdown{
+                display: block;
+            }
+        }
+    }
+}
+
+.breadcrumb {
+    font-size: 1.6rem;
+    white-space: nowrap;
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem 2rem;
+        list-style-type: none;
+        a {
+            color: $secondary-color2;
+        }
+        li:nth-child(2)::before,li:nth-child(3)::before {
+            content: "/";
+            margin-right: 2rem;
+        }
+    }
+}
+
+.leftsidebar {
+    width: 25%;
+    .filter {
+        font-size: 2rem;
+
+        padding: 1rem;
+        box-shadow: 0px -1px 2px rgba(0, 0, 0, 0.233);
+        .row {
+            margin: 2rem 0;
+            label {
+                display: block;
+                margin-bottom: 1rem;
+            }
+            input,
+            select {
+                width: 100%;
+                font-size: 2rem;
+            }
+            input {
+                width: calc(100% - 1rem);
+            }
+            select {
+            }
+        }
+    }
+}
+.main{
+    display: flex;
+    gap: 0 2rem;
+    justify-content: space-between;
+}
+.content{
+    width: calc(71%);
+    .items{
+        .item{
+            width: 100%;
+            display:flex;
+            margin-bottom:4rem;
+            .image{
+                width: 50%;
+                img{
+                    width: 100%;
+                }
+            }
+            .description{
+                width: 50%;
+                padding: 1rem;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                .title{
+                    font-size: 2rem;
+                    padding: 1rem;
+                    a{
+                        color: $primary-color;
+                        text-decoration: none;
+                    }
+                    a:hover{
+                        text-decoration: underline;
+                        text-underline-offset: 1rem;
+                    }
+                }
+                .text{
+                    font-size: 1.6rem;
+
+                }
+
+            }
+        }
+    }
+}
+
+.footer {
+    padding: 2rem;
+    font-size: 2rem;
+    background-color: $secondary-color3;
+    .footer-items {
+        display: flex;
+        justify-content: space-between;
+
+        ul {
+            list-style-type: none;
+            li {
+                padding: 1rem 0;
+            }
+            a {
+                color: $secondary-color;
+                text-decoration: none;
+            }
+        }
+        .social {
+            a {
+                color: $secondary-color2;
+                font-size: 4rem;
+                padding: 0 2rem;
+            }
+        }
+        a:hover{
+            text-decoration: underline;
+            text-underline-offset: 1rem;
+        }
+    }
+   
+    p {
+        font-size: 1.6rem;
+        text-align: center;
+        span {
+            @extend .brand-logo;
+        }
+    }
+}
+
+
+@media only screen and (max-width:1440px) {
+    .wrapper{
+        width: calc(100vw - 2rem);
+    }
+    
+}
+@media only screen and (max-width:900px) {
+    
+    .main{
+        display: flex;
+        flex-wrap: wrap;
+        .leftsidebar{
+            min-width: calc(100vw - 2rem);
+        }
+        .content{
+            min-width: calc(100vw - 2rem);
+        }
+    }
+    
+}
+

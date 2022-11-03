@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Markit - Project</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div class="navbar">
+            <div class="brand-logo">
+                <h1>mark<i>i</i>t</h1>
+            </div>
+            <div class="search-box">
+                <form action="">
+                    <input type="text" name="search-input" id="search-input"
+                        placeholder="kezdjen el gépelni a kereséshez...">
+                    <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
+            </div>
+            <div class="nav-items">
+                <ul>
+                    <li class="nav-item"><a href="">Regisztráció</a></li>
+                    <li class="nav-item sub">
+                        <a href="">Belépés<i class="fa-solid fa-angle-down"></i></a>
+                        <ul class="dropdown">
+                            <form action="" method="post">
+                                <input type="email" name="email" id="email" placeholder="Email">
+                                <input type="password" name="password" id="password" placeholder="Jelszó">
+                                <button>Belépés</button>
+                                <div class="links">
+                                    <a href="#">Elfelejtett jelszó</a>
+                                </div>
+                            </form>
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <div class="breadcrumb">
+                <ul>
+                    <li><a href="#">markit</a></li>
+                    <li><a href="#">Múszaki cikkek</a></li>
+                    <li><a href="#">Mobiltelefon</a></li>
+                </ul>
+            </div>
+            <div class="main">
+                <div class="leftsidebar">
+
+                    <div class="filter">
+                        <h2>Találati lista</h2>
+                        <div class="row">
+                            <label for="keyword">Kulcsszó</label>
+                            <input type="text" name="keyword" id="keyword">
+                        </div>
+                        <div class="row">
+                            <label for="brand">Márka</label>
+                            <select name="brand" id="brand" multiple>
+                                <option value="apple">Apple</option>
+                                <option value="samsung">Samsung</option>
+                                <option value="Huawei">Huawei</option>
+                                <option value="Xiaomi">Xiaomi</option>
+                            </select>
+                        </div>
+                        <div class="row">
+                            <label for="ostype">Operációs rendszer</label>
+                            <select name="ostype" id="ostype" multiple>
+                                <option value="android">Android</option>
+                                <option value="ios">iOS</option>
+                                <option value="osszes">Összes</option>
+                            </select>
+                        </div>
+
+                        <div class="row">
+                            <label for="ostype">Kijelző méret</label>
+                            <select name="ostype" id="ostype" multiple>
+                                <option value="5">5</option>
+                                <option value="4.7">4.7</option>
+                                <option value="6">6</option>
+                            </select>
+                        </div>
+
+                        <div class="row">
+                            <label for="ostype">Egyéb tulajdonságok</label>
+                            <select name="ostype" id="ostype" multiple>
+                                <option value="Bluetooth">Bluetooth</option>
+                                <option value="WiFI">WiFI</option>
+                                <option value="Amoled">Amoled</option>
+                            </select>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="content">
+                    <div class="items">
+                        <div class="item">
+                            <div class="image"><img src="assets/images/iphone12.jpg" alt="Eladó iphone 12"></div>
+                            <div class="description">
+                                <div class="title"><a href="#">Eladó Iphone 12XR</a></div>
+                                <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit,
+                                    delectus. Modi odio enim in nemo magnam rerum, veritatis exercitationem commodi
+                                    reiciendis ratione ipsum adipisci non accusantium. Excepturi saepe fugit voluptatum.
+                                </div>
+                                <div class="info">
+                                    <div class="location">Bács-Kiskun | Kecskemét</div>
+                                    <div class="date">3 perce lett frissítve</div>
+
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="image"><img src="assets/images/s10.jpg" alt="Eladó iphone 12"></div>
+                            <div class="description">
+                                <div class="title"><a href="#">Eladó Samsung S10e</a></div>
+                                <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit,
+                                    delectus. Modi odio enim in nemo magnam rerum, veritatis exercitationem commodi
+                                    reiciendis ratione ipsum adipisci non accusantium. Excepturi saepe fugit voluptatum.
+                                </div>
+                                <div class="info">
+                                    <div class="location">Bács-Kiskun | Kiskunfélegyháza</div>
+                                    <div class="date">10 perce lett frissítve</div>
+
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                        <div class="item">
+                            <div class="image"><img src="assets/images/iphone12.jpg" alt="Eladó iphone 12"></div>
+                            <div class="description">
+                                <div class="title">Eladó Iphone 12XR</div>
+                                <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit,
+                                    delectus. Modi odio enim in nemo magnam rerum, veritatis exercitationem commodi
+                                    reiciendis ratione ipsum adipisci non accusantium. Excepturi saepe fugit voluptatum.
+                                </div>
+                                <div class="info">
+                                    <div class="location">Bács-Kiskun | Kecskemét</div>
+                                    <div class="date">3 perce lett frissítve</div>
+
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="image"><img src="assets/images/iphone12.jpg" alt="Eladó iphone 12"></div>
+                            <div class="description">
+                                <div class="title">Eladó Iphone 12XR</div>
+                                <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit,
+                                    delectus. Modi odio enim in nemo magnam rerum, veritatis exercitationem commodi
+                                    reiciendis ratione ipsum adipisci non accusantium. Excepturi saepe fugit voluptatum.
+                                </div>
+                                <div class="info">
+                                    <div class="location">Bács-Kiskun | Kecskemét</div>
+                                    <div class="date">3 perce lett frissítve</div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
+        <div class="footer">
+            <div class="footer-items">
+                <div class="footer-item">
+                    <ul>
+                        <li><a href="#">Kiemelés</a>
+                        </li>
+                        <li>
+                            <a href="#">Média ajánlat</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-item">
+                    <ul>
+                        <li><a href="#">Adatvédelmi irányelvek</a>
+                        </li>
+                        <li>
+                            <a href="#">Vásárlási tájékoztató</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-item">
+                    <ul>
+                        <li><a href="#">Oldaltérkép</a>
+                        </li>
+                        <li>
+                            <a href="#">Média ajánlat</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-item">
+                    <ul>
+                        <li><a href="#">Kiemelés</a>
+                        </li>
+                        <li>
+                            <a href="#">Média ajánlat</a>
+                        </li>
+                    </ul>
+                    <div class="social">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-google"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>minden jog fenntartva!&copy;<span>mark<i>i</i>t</span> <i>the market place</i></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/scripts.js"></script>
+</body>
+
+</html>
